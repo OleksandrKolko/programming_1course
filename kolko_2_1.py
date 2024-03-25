@@ -9,7 +9,6 @@ class Figure:
     def exsists(self):
         pass
 
-
 class Triangle(Figure):
     def __init__(self, a, b, c):
         super().__init__()
@@ -23,15 +22,12 @@ class Triangle(Figure):
 
     def perimeter(self):
 
-
         return self.a + self.b + self.c
-
 
     def area(self):
 
         p = self.perimeter() / 2
         return (p * (p - self.a) * (p - self.b) * (p - self.c)) ** 0.5
-
 
     def exsists(self):
 
@@ -44,7 +40,6 @@ class Triangle(Figure):
     def __repr__(self):
 
         return f"Triangle({self.a}, {self.b}, {self.c})"
-
 
 class Rectangle(Figure):
     def __init__(self, a, b):
@@ -60,11 +55,9 @@ class Rectangle(Figure):
 
         return 2 * (self.a + self.b)
 
-
     def area(self):
 
         return self.a * self.b
-
 
     def exsists(self):
 
@@ -76,7 +69,6 @@ class Rectangle(Figure):
     def __repr__(self):
 
         return f"Rectangle({self.a}, {self.b})"
-
 
 class Trapeze(Figure):
     def __init__(self, a, b, c, d):
